@@ -1,0 +1,116 @@
+*:focus-visible {
+  outline: none;
+}
+* {
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3f2ef;
+}
+dialog {
+  border: none;
+  border-radius: 5px;
+  margin: 4rem auto;
+}
+dialog::backdrop {
+  backdrop-filter: blur(2px);
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #e2e2e2;
+  padding: 0 0 1em;
+}
+header span {
+  font-size: 1.3rem;
+}
+button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  filter: grayscale(1);
+}
+main {
+  width: 30em;
+}
+main header {
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: none;
+  padding: 1em 0;
+}
+main header div button {
+  border: 1px solid grey;
+  border-radius: 20px;
+}
+main header img {
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+}
+[role="textbox"] {
+  display: block;
+  overflow: hidden;
+  min-height: 101px;
+  line-height: 30px;
+}
+[role="textbox"]:empty::before {
+  content: "What do you want to talk about?";
+  color: gray;
+}
+img {
+  border-radius: 50%;
+  width: 50px;
+}
+section,
+article {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  padding: 1em;
+  width: 30rem;
+  margin-bottom: 1rem;
+}
+article {
+  flex-direction: column;
+}
+article header {
+  border-bottom: none;
+  justify-content: start;
+}
+article header div {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding-left: 10px;
+}
+article header div button {
+  border: none;
+  background-color: white;
+  padding: 0;
+}
+section button {
+  width: 100%;
+  text-align: left;
+  border-radius: 2rem;
+  border: 1px solid grey;
+  color: grey;
+  padding: 10px;
+  margin-left: 10px;
+  font-weight: bold;
+  background-color: #a3f5ef;
+}
+form span {
+  font-size: 12px;
+}
+form button {
+  filter: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+}
